@@ -65,6 +65,10 @@ body {
     min-width: 300px;
 }
 
+.item h3:hover {
+    color: #F47B56;
+}
+
 .item p {
     font-size: 13px;
     display: none;

@@ -4,7 +4,7 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-body {
+.container-pai {
     width: 100%;
     height: 100vh;
     background: linear-gradient(0deg, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
@@ -24,15 +24,43 @@ body {
 }
 
 .imagem {
+    background-position: -565px -325px;
     width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.img-principal {
+    background-image: url(../imagens/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    /*  margin-top: -40px;
+    margin-left: -170px; */
+    background-position: -80px 40px;
+    position: absolute;
+}
+
+.box {
+    z-index: 1;
+    margin: 6px 495px -10px 40px;
 }
 
 .conteudo {
     width: 50%;
-    padding: 40px 100px 50px 0px
+    padding: 40px 100px 50px 0px;
 }
 
 .titulo {
+    color: hsl(237, 12%, 33%);
     font-size: 22px;
     padding: 15px 0px 20px 0px;
 }
@@ -73,6 +101,7 @@ body {
     font-size: 13px;
     display: none;
     padding: 15px 0px;
+    color: hsl(240, 6%, 50%);
 }
 
 .icone {
